@@ -22,26 +22,26 @@ The intelligent monitoring device performs intelligent discrimination based on t
    - **Shedding check mode**<br/>
      The buzzer sounds an alarm when the sensor comes off.
    
-      ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/Shedding%20check.gif)
+      ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/Shedding%20check.gif)
    - **Posture detection mode**<br/>
      The device can detect abnormal conditions such as human fall and being picked up.
     
-      ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/Posture%20detection_1.gif)
-	  ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/Posture%20detection_2.gif)
+      ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/Posture%20detection_1.gif)
+	  ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_systemr/blob/master/Screenshots/Posture%20detection_2.gif)
    - **GPS mode**<br/>
      When the user exceeds the safe distance, the location information can be sent to the guardian's mobile phone.
 	 
-	  ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/GPS%20mode.gif)
+	  ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/GPS%20mode.gif)
    - **Wisdom broadcast mode**<br/>
      When the user is lost, the voice mode can be switched with one button for playing the user's family information.
 	 
-	  ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/Wisdom%20broadcast.gif)
+	  ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/Wisdom%20broadcast.gif)
 ## System Architecture
    As shown in the figure below, the system consists of **three parts: input, master, and output**.
    - The **input** includes a Bluetooth module, a GPS module and a JY901 nine-axis sensor module. The Bluetooth module receives the connection signal and sends it to the ARC processor; The JY901 module is responsible for detecting the motion state, The module mainly detects the acceleration change during motion and relative to the horizontal direction of the deflection condition; the GPS module is responsible for locating the user's location information and sending it to the master.
    - The **master** is composed of an ARC processor. It mainly complete the processing of the data and complete the matching with the database according to the algorithm, and send the corresponding command to the output, the data processing includes through personalized calibration. Different people's movements have their own characteristics. Through personalized calibration, a database with posture characteristic information is established, which makes the system suitable for different users, and the user can customize according to individual usage.
    - The **output** includes a voice synthesis module and a GPRS module. When the user exceeds the safety distance, the position information acquired by the GPS can be sent to the guardian mobile phone through the GPRS module to realize quick rescue and real-time positioning, and the family information can be reproduced in the form of voice. Convenient and timely contact with the guardian.
-   ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/Architecture.png)
+   ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/Architecture.png)
 # Hardware and Software Setup
 ## Required Hardware   
    - 1 DesignWare ARC EM Starter Kit(EMSK)
@@ -66,7 +66,7 @@ The intelligent monitoring device performs intelligent discrimination based on t
       - Connect **Bluetooth module** to **J4**(Using I2C interface)
    2. Configure your EMSKs with proper core configuration
    - EMSK connection
-   ![image](https://github.com/Zhaoyang95/Anti-lost-security-detection-system-based-on-ARC-processor/blob/master/Screenshots/connection.jpg)
+   ![image](https://github.com/Zhaoyang95/Zhaoyang95/Anti-lost_security_detection_system/blob/master/Screenshots/connection.jpg)
 
 # User Manual
 ## Before Running This Application
@@ -109,7 +109,7 @@ line 107: change
          CUR_CORE ?= arcem7d
          TOOLCHAIN ?= gnu
 ```
-   - The relative series of the root directory, here the path of the Makefile is .\embARC\example\emsk\sign language/makefile:
+   - The relative series of the root directory, here the path of the Makefile is 
 ```
          #
          # root dir of embARC
